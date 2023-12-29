@@ -1,0 +1,73 @@
+.topproducts {
+  /* margin: 2rem 0;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: #f9f871; */
+  padding: 2rem 1rem;
+  align-items: center;
+}
+.topprodlist {
+  display: flex;
+  justify-content: center;
+  
+}
+.topprodhead > h1 {
+  font-family: "Lato", sans-serif;
+}
+.topprodhead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.viewmore {
+  margin: 1rem;
+}
+
+.aboutus {
+  padding: 4rem 20.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #DEF2F0;
+}
+.aboutus > p {
+  font: 1.5rem "Poppins";
+  margin: 0.8rem 0;
+  
+}
+.btncss{
+    font-family: "Poppins" !important;
+    border-radius: 5rem !important;
+}
+.categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #b1f4a4; */
+    padding: 2rem 1rem;
+    align-items: center;
+}
+.elitebrands{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #DEF2F0;
+    padding: 2rem 1rem 4rem;
+    align-items: center;
+}
+@media screen and (max-width: 1100px) {
+ .topprodlist {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
+  .aboutus > p {
+    font-size: 1.3rem;
+  }
+  .aboutus {
+    padding: 4rem;
+}
+}
