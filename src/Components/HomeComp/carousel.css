@@ -1,8 +1,13 @@
 .carousel .carousel-item {
-    height: 45rem;
-    margin-top: 8rem;
+    height: 40rem;
+    margin-top: 12rem;
   }
-  
+  .carousel-inner-custom{
+    background-color: var(--blue);
+    color: white;
+    font-size: 9rem;
+    text-align: center;
+  }
   .carcss {
       position: absolute;
       object-fit: cover;

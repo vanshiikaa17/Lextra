@@ -1,9 +1,10 @@
 .carousel-custom .carousel-item-custom{
-    height: fit-content !important;
+    height: auto !important;
     /* margin: 5rem !important; */
-
+    margin-top: 3rem !important;
 
 }
+
 @media screen and (max-width: 1100px) {
 
 .carousel-custom .carousel-item-custom{

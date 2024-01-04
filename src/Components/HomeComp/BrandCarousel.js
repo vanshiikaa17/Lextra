@@ -4,7 +4,6 @@ import img2 from "../../pictures/brand2.jpg";
 import "./brandCarousel.css";
 export const BrandCarousel = () => {
   return (
-    <div>
       <div
         id="carouselExampleInterval"
         className="carousel slide carousel-custom"
@@ -45,6 +44,5 @@ export const BrandCarousel = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
