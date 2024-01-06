@@ -33,7 +33,7 @@
 i{
     color: var(--blue);
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
 .contactdiv{
 flex-direction: column;
 
@@ -51,7 +51,7 @@ font-size: 0.8rem;
     margin: 1rem;
 }
 .emailbtn{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 .contact-right iframe{
     width: 280px;

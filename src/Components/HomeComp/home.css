@@ -10,7 +10,6 @@
 .topprodlist {
   display: flex;
   justify-content: center;
-  
 }
 .topprodhead > h1 {
   font-family: "Lato", sans-serif;
@@ -35,75 +34,71 @@
   background-color: var(--blue3);
   color: white;
 }
-.vmbtn{
-    background-color: var(--yellow);
-    
+.vmbtn {
+  background-color: var(--yellow);
 }
-.aboutus  p {
+.aboutus p {
   font: 1.5rem "Poppins";
   margin: 0.8rem 0;
-  
 }
-.btncss{
-    font-family: "Poppins" !important;
-    border-radius: 5rem !important;
+.btncss {
+  font-family: "Poppins" !important;
+  border-radius: 5rem !important;
 }
 .categories {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* background-color: #edf9f8; */
- 
-    padding: 4rem 1rem;
-    align-items: center;
-}
-.elitebrands{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem 1rem 4rem;
-    align-items: center;
-    /* border-top: 1px solid rgb(93, 93, 93); */
-    /* clip-path: polygon(53% 0, 0 0, 0 21%); */
-    background-image: linear-gradient(var(--yellow), white, white,white);
-    /* background-color: var(--yellow); */
-}
-.footer{
-    background-color: var(--blue2);
-    color: white;
-}
-.footer-1{
-    display: flex;
-    /* background-color: #DEF2F0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: #edf9f8; */
 
-    /* flex-direction: column; */
-    align-items: center;
-    padding: 3rem;
-    /* text-align: center; */
+  padding: 4rem 1rem;
+  align-items: center;
 }
-.footer img{
-    padding: 1rem;
-    width: 13.6rem;
-    box-sizing: border-box;
-    border-right: 1px solid rgb(93, 93, 93);
+.elitebrands {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 1rem 4rem;
+  align-items: center;
+  /* border-top: 1px solid rgb(93, 93, 93); */
+  /* clip-path: polygon(53% 0, 0 0, 0 21%); */
+  background-image: linear-gradient(var(--yellow), white, white, white);
+  /* background-color: var(--yellow); */
 }
-.footerp{
+.footer {
+  background-color: var(--blue2);
+  color: white;
+}
+.footer-1 {
+  display: flex;
+  /* background-color: #DEF2F0; */
+
+  /* flex-direction: column; */
+  align-items: center;
+  padding: 3rem;
+  /* text-align: center; */
+}
+.footer img {
+  padding: 1rem;
+  width: 13.6rem;
+  box-sizing: border-box;
+  border-right: 1px solid rgb(93, 93, 93);
+}
+.footerp {
   font: 1.5rem "Poppins";
   padding: 1rem;
-
 }
-.footer-2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-
+.footer-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
 }
-.footer-2 p{
-    font-size: 1rem;
+.footer-2 p {
+  font-size: 1rem;
 }
 @media screen and (max-width: 1100px) {
- .topprodlist {
+  .topprodlist {
     /* flex-direction: column; */
     flex-wrap: wrap;
   }
@@ -112,15 +107,24 @@
   }
   .aboutus {
     padding: 4rem;
-}
-.footerp{
-  font-size: 0.8rem;
-}
-.footer img{
-  padding: 0.8rem;
-  width: 13.6rem;
-}
-.footer-1{
-  padding: 1rem;
-}
+  }
+  .footer-2 p,
+  .footerp {
+    font-size: 0.8rem;
+  }
+  .footer img {
+    padding: 0.8rem;
+    width: 13.6rem;
+    height: 5rem;
+    width: 10rem;
+  }
+  .footer-1 {
+    padding: 1rem;
+  }
+  .elitebrands {
+    padding: 4rem;
+  background-image: linear-gradient(to bottom right, var(--yellow), white, white, white, white, var(--yellow) );
+
+  }
+  
 }

@@ -75,7 +75,7 @@ export const Home = () => {
       </div>
       <div className="footer">
         <div className="footer-1">
-          <img className="logo" src={logo} alt="Lextra" />
+          <img src={logo} alt="Lextra" />
           <p className="footerp">
             Lextra Pharmaceuticals cater to over 45 therapeutic areas that
             include cardiovascular, gastrointestinal, analgesics, haematinics,

@@ -13,8 +13,52 @@ export const Navbar = () => {
               className="collapse navbar-collapse navitems"
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+              <ul className="navbar-nav ms-auto mb-2 mb-lg-0 flex-row top-ul">
+              <li className="nav-item">
+                  <Link to="/" className="nav-link">
+                  Cardiovascular
+                  </Link>
+                </li>
                 <li className="nav-item">
+                  <Link to="/about" className="nav-link">
+                    Analgesics
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/products" className="nav-link ">
+                    Antibiotics
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to="/keypersonnel" className="nav-link ">
+                  Gastrointestinal
+                  </Link>
+                </li>
+
+
+
+              </ul>
+            </div>
+            
+          </div>
+          </div>
+          </nav>
+    <div className="nav2-custom">
+
+   
+      <nav className="navbar navbar-custom navbar-expand-lg bg-body-tertiary ">
+        <div className="container-fluid  ">
+          
+          <div className="navitems2">
+            <Link to="/" className="navbar-brand">
+              <img className="logo" src={logo} alt="Lextra" />
+            </Link>
+            
+            <div
+              className=".navbar-expand "
+            >
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0 flex-row top-ul ">
+              <li className="nav-item">
                   <Link to="/" className="nav-link">
                     HOME
                   </Link>
@@ -35,50 +79,7 @@ export const Navbar = () => {
                   </Link>
                 </li>
 
-
-              </ul>
-            </div>
-            
-          </div>
-          </div>
-          </nav>
-    <div className="nav2-custom">
-
-   
-      <nav className="navbar navbar-custom navbar-expand-lg bg-body-tertiary ">
-        <div className="container-fluid navbarcss ">
-          
-          <div className="navitems2">
-            <Link to="/" className="navbar-brand">
-              <img className="logo" src={logo} alt="Lextra" />
-            </Link>
-            
-            <div
-              className=".navbar-expand "
-            >
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item">
-                  <Link to="/" className="nav-link">
-                  Antibiotics
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/about" className="nav-link">
-                    Analgesics
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/products" className="nav-link ">
-                    Cardiovascular
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link to="/keypersonnel" className="nav-link ">
-                  Gastrointestinal
-                  </Link>
-                </li>
-
-
+                
               </ul>
             </div>
             <button
