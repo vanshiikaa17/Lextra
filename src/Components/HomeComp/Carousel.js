@@ -1,8 +1,8 @@
 import React from "react";
 import "./carousel.css";
-import img1 from "../../pictures/Frame1.png";
-import img2 from "../../pictures/Frame2.png";
-import img3 from "../../pictures/Frame3.png";
+import img1 from "../../pictures/home1.avif";
+import img2 from "../../pictures/home2.jpg";
+import img3 from "../../pictures/home3.jpg";
 export const Carousel = () => {
   return (
     <div>
@@ -35,16 +35,16 @@ export const Carousel = () => {
         </div>
         <div className="carousel-inner carousel-inner-custom">
           <div className="carousel-item active" data-bs-interval="2000">
-            {/* <img src={img1} className="d-block w-100 carcss" alt="..." /> */}
+            <img src={img1} className="d-block w-100 carcss" alt="..." />
             <div>Sample Image</div>
           </div>
           <div className="carousel-item" data-bs-interval="2000">
-            {/* <img src={img2} className="d-block w-100 carcss" alt="..." /> */}
+            <img src={img2} className="d-block w-100 carcss" alt="..." />
             <div>Lextra Sample Image</div>
 
           </div>
           <div className="carousel-item" data-bs-interval="2000">
-            {/* <img src={img3} className="d-block w-100 carcss" alt="..." /> */}
+            <img src={img3} className="d-block w-100 carcss" alt="..." />
             <div>Sample Images Lextraa</div>
 
           </div>

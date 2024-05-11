@@ -1,0 +1,143 @@
+/* .first {
+    background-color: var(--yellow);
+
+}
+.second {
+    background-color: var(--orange);
+
+}
+.third {
+    background-color: var(--blue);
+}
+.fourth {
+    background-color: var(--blue4);
+}
+.aboutPage>div{
+    padding: 4rem 7rem;
+    height: 45rem;
+
+
+}
+.aboutPage>div h1{
+    font: 3rem"Poppins";
+    margin: 2rem 0;
+    color: white;
+
+}
+.aboutPage>div:nth-child(even){
+   text-align: end !important;
+}
+
+.aboutPage>div>div{
+    font: 1.8rem "Poppins";
+   
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.aboutPage p{
+    width: 70rem;
+
+}
+.aboutPage img{
+    border-radius: 50%;
+    height: 25rem;
+    width: 25rem;
+} */
+
+.aboutPage{
+    text-align: center;
+}
+
+.aboutPage>div{
+    padding: 1rem;
+    margin: 1rem 4rem;
+}
+
+.aboutPage h1{
+    font-family: "Lato";
+    margin: 2rem;
+    font-weight: bold;
+}
+.aboutPage p{
+    font-size: 1.7rem;
+}
+.para2 ,.para4{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.para4 img{
+    height: 25rem;
+    width: 25rem;
+    margin: 1rem;
+
+}
+.para2p, .para4p{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--yellow);
+    color: white;
+    margin: 1rem;
+    padding: 3rem;
+    font-family: "Poppins" ;
+}
+.para4p{
+    background-color: var(--orange) !important;
+}
+.qstanhead{
+    color: var(--blue);
+}
+.qstancol{
+    background-color: var(--blue4) !important;
+    margin-top: 3rem;
+
+}
+.para2 img{
+    /* border-radius: 50%; */
+    height: 15rem;
+    width: 15rem;
+    margin: 0.6rem;
+} 
+.para5 img{
+    margin: 3rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .aboutPage>div{
+        padding: 0.6rem;
+        margin: 0;
+    }
+    .aboutPage p{
+        font-size: 1rem;
+    }
+.para2 {
+    flex-direction: column;
+}
+.para4{
+    flex-direction: column-reverse;
+}
+    .para2 img{
+        /* border-radius: 50%; */
+        height: 9rem;
+        width: 9rem;
+        margin: 0.3rem;
+    } 
+    .para2p, .para4p{
+       padding: 1rem;
+        margin: 0.5rem;
+        align-items: center;
+    }
+    
+    .para5 img , .para4 img {
+        margin: 0.5rem;
+        height: 15rem;
+        width: 15rem;
+    }
+    
+}

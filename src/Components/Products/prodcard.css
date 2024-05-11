@@ -46,6 +46,8 @@
     font-size: 1.2rem;
   }
   .productCard :hover {
+    height: 14rem;
+
     width: 8.1rem;
   }
   .spann{

@@ -4,13 +4,13 @@
   flex-direction: column;
   justify-content: center;
   /* background-color: var(--yellow); */
-  padding: 4rem 1rem;
+  padding: 4rem 20.2rem;
   align-items: center;
 }
-.topprodlist {
+/* .topprodlist {
   display: flex;
   justify-content: center;
-}
+} */
 .topprodhead > h1 {
   font-family: "Lato", sans-serif;
 }
@@ -37,9 +37,9 @@
 .vmbtn {
   background-color: var(--yellow);
 }
-.aboutus p {
+.homepara {
   font: 1.5rem "Poppins";
-  margin: 0.8rem 0;
+  margin: 1rem;
 }
 .btncss {
   font-family: "Poppins" !important;
@@ -62,69 +62,81 @@
   align-items: center;
   /* border-top: 1px solid rgb(93, 93, 93); */
   /* clip-path: polygon(53% 0, 0 0, 0 21%); */
-  background-image: linear-gradient(var(--yellow), white, white, white);
+  /* background-image: linear-gradient(var(--yellow), white, white, white); */
   /* background-color: var(--yellow); */
 }
-.footer {
-  background-color: var(--blue2);
-  color: white;
+.vision{
+  padding: 6rem 2rem;
+  background-color: #EBBE2D;
 }
-.footer-1 {
+.visionmission{
   display: flex;
-  /* background-color: #DEF2F0; */
-
-  /* flex-direction: column; */
-  align-items: center;
-  padding: 3rem;
-  /* text-align: center; */
-}
-.footer img {
   padding: 1rem;
-  width: 13.6rem;
-  box-sizing: border-box;
-  border-right: 1px solid rgb(93, 93, 93);
+  /* margin: 2rem; */
+justify-content: space-between;
+align-items: center;
 }
-.footerp {
-  font: 1.5rem "Poppins";
-  padding: 1rem;
+.visionmission img{
+  height: 25rem;
+  width: 25rem;
 }
-.footer-2 {
+.visionmission div{
+  margin: 0 2rem;
+}
+.visionmission p{
+  font-size: 1.5rem;
+}
+.vision h1{
+  text-align: center ;
+  color: var(--blue3);
+  font-size: 4rem;
+}
+.brands{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
+  
 }
-.footer-2 p {
-  font-size: 1rem;
+.brands>img{
+  height: 20rem;
 }
 @media screen and (max-width: 1100px) {
-  .topprodlist {
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-  }
-  .aboutus > p {
+  
+  .homepara {
     font-size: 1rem;
   }
-  .aboutus {
-    padding: 4rem;
+  .aboutus, .topproducts {
+    padding: 2rem;
   }
-  .footer-2 p,
-  .footerp {
-    font-size: 0.8rem;
-  }
-  .footer img {
-    padding: 0.8rem;
-    width: 13.6rem;
-    height: 5rem;
-    width: 10rem;
-  }
-  .footer-1 {
-    padding: 1rem;
-  }
+ 
   .elitebrands {
     padding: 4rem;
   background-image: linear-gradient(to bottom right, var(--yellow), white, white, white, white, var(--yellow) );
 
   }
+  /* .vision{
+  margin-top: 4rem;
+    
+  } */
+  .visionmission img{
+    height: 15rem;
+    width: 15rem;
+  }
+.visionmission{
+  flex-direction: column;
+}
+.visionmission div{
+  margin:  0;
+}
+.visionmission p{
+  font-size: 1.2rem;
+} 
+.vision h1{
+  font-size: 2rem;
+}
+.brands{
+  flex-direction: column;
   
+}
+.brands>img{
+  height: 10rem;
+}
 }

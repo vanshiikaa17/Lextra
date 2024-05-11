@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import prod from "../../pictures/Prod.jpg";
+// import prod from "../../pictures/1.jpg";
 import "./prodcard.css";
-export const ProductCard = () => {
+
+export const ProductCard = (Props) => {
   return (
     <div>
       {/* <Link className='productCard' to={`/allproducts/${product._id}`}>
@@ -17,9 +18,9 @@ export const ProductCard = () => {
     </Link> */}
 
       <Link className="productCard" to="/products">
-        <img className="cardimg" src={prod} alt="name" />
-        <p>Name of Med</p>
-        <span className="spann">₹ 500</span>
+        <img className="cardimg" src={Props.imgurl} alt="name" />
+        <p>{Props.name}</p>
+        <span className="spann">₹ {Props.cost}</span>
 
       </Link>
     </div>

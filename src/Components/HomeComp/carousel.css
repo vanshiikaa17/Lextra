@@ -1,19 +1,18 @@
 .carousel .carousel-item {
-    height: 40rem;
-    margin-top: 12rem;
+    height: 70vh;
   }
-  .carousel-inner-custom{
+  /* .carousel-inner-custom{
     background-color: var(--blue);
     color: white;
     font-size: 9rem;
     text-align: center;
-  }
+  } */
   .carcss {
       position: absolute;
       object-fit: cover;
       top: 0;
       left: 0;
-      min-height: 30vmax;
+      /* min-height: 30vh; */
   }
 
   /* .carouselDiv{
@@ -21,12 +20,12 @@
   } */
   @media screen and (max-width:1100px) {
     .carousel .carousel-item {
-      height: 50rem;
+      height: 30vh;
     }
     
     .carcss {
         
-        min-height: 50rem;
+        min-height: 20vh;
     }
   
   }

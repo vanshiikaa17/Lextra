@@ -9,29 +9,24 @@
   box-shadow: 5px 1px 13px 2px rgb(93, 93, 93);
 }
 .navbarcss {
-  display: flex;
+  /* display: flex; */
   /* align-items: center; */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   background-color: var(--blue);
-
-  padding: 0;
-  flex-direction: column;
+  height: 2rem;
+  /* padding: 0; */
+  /* flex-direction: column; */
 }
-
-/* .searchcss {
-  height: 3.2rem;
-  margin: 0.6rem 0;
-  width: 80%;
-  display: flex;
-    justify-content: space-between;
+.dropdownCSS {
+  /* display: flex; */
+  padding: 1rem;
+  position: absolute !important;
+  font: 1.4rem "Poppins";
+  /* flex-direction: column; */
 }
-.inputcss {
-  height: 3.2rem;
-  font-size: 1.2rem;
-  border: 1px solid rgb(28, 87, 206);
-  border-bottom: 1px solid rgb(93, 93, 93);
-  width: 80%;
-} */
+.dropdownCSS li {
+  padding: 0.8rem;
+}
 .navcontact {
   margin: 4rem;
   color: #0099cc;
@@ -88,9 +83,14 @@
   padding: 0 1.5rem;
   transition: ease-in-out 0.25s;
 }
-.navitems2 .nav-link:hover, .navitems2 .nav-link:focus{
+.navitems2 .nav-link:hover,
+.navitems2 .nav-link:focus {
   color: var(--blue);
   /* text-decoration: underline; */
+}
+.navbarLogo{
+  display: flex;
+  justify-content: space-between;
 }
 @media screen and (max-width: 500px) {
   .logo {
@@ -98,6 +98,9 @@
     width: 4.5rem;
     margin: 0;
     /* margin: 0 13rem; */
+  }
+  .navbarLogo{
+    width: 80vw;
   }
   .navbar-toggler {
     /* width: 2rem !important;
@@ -109,12 +112,14 @@
     height: 1.5rem !important;
   }
   .navitems2 .nav-link {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     margin: 0.2rem;
   }
   .navitems {
     margin: 0;
     font-size: 0.5rem;
+    /* background-color: var(--blue);
+    width: 100vw; */
   }
 
   .navbartop {
@@ -126,6 +131,21 @@
     padding: 0;
     margin: 0 0.4rem;
   }
+  .dropdownCSS {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+  }
+  .dropdownCSS li {
+    padding: 0;
+  }
+  .navitems2{
+  flex-direction: column;
+
+  }
+  .navbarcss{
+  height: 1rem;
+
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 910px) {
@@ -135,6 +155,13 @@
     margin: 0;
     /* margin: 0 13rem; */
   }
+  .navbarcss{
+    height: 1rem;
+  
+    }
+  .navbarLogo{
+    width: 80vw;
+  }
   .navbar-toggler {
     /* width: 2rem !important;
     height: 2rem !important; */
@@ -143,8 +170,8 @@
 
   .navitems,
   .navitems2 .nav-link {
-    font-size: 0.8rem;
-    margin: 0;
+    font-size: 1rem;
+    margin: 0.5rem;
   }
 
   .top-ul > li {
@@ -158,11 +185,24 @@
   .navitems > ul > li {
     padding: 0;
   }
+  .dropdownCSS {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .dropdownCSS li {
+    padding: 0.4rem;
+  }
+  .navitems2{
+    flex-direction: column;
+  }
 }
 @media screen and (min-width: 911px) and (max-width: 1300px) {
   .navitems,
   .navitems2 .nav-link {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0.8rem;
+  }
+  .navitems2{
+    flex-direction: column;
   }
 }

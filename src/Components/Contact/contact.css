@@ -29,9 +29,11 @@
 }
 .emailbtn{
     font-size: 1.5rem;
+    background-color: var(--yellow);
+    border-color: var(--yellow);
 }
 i{
-    color: var(--blue);
+    color: var(--yellow);
 }
 @media screen and (max-width: 1200px) {
 .contactdiv{

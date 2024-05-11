@@ -1,38 +1,42 @@
 import React from "react";
 import { Carousel } from "./Carousel";
-import { ProductCard } from "../Products/ProductCard";
+// import { ProductCard } from "../Products/ProductCard";
 import "./home.css";
 import { Link } from "react-router-dom";
-import { CategoryCard } from "../Products/CategoryCard";
+// import { CategoryCard } from "../Products/CategoryCard";
 import { MdNavigateNext } from "react-icons/md";
 import { BrandCarousel } from "./BrandCarousel";
-import logo from "../../pictures/logo_lextra.png";
+import { Vision } from "./Vision";
+import brands from "../../pictures/brands01.png";
+import brands02 from "../../pictures/brands02.png";
+import data from '../../data.js';
+let top=[];
+let i=0;
+while(i<4){
+  top.push(data[i]);
+  i++;
+}
+// let Product = require('../../data');
 
 export const Home = () => {
   return (
     <div>
       <Carousel />
       <div className="topproducts">
-        <div className="topprodhead">
-          <h1>Top Products</h1>
+          <h1>Products</h1>
+        <p className="homepara"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde fuga nisi vero dicta maiores rerum ad autem perferendis inventore, ratione quam doloribus veritatis. Quod quas unde nesciunt, culpa iste sint corrupti? Saepe dolores in reiciendis repellendus quis deleniti distinctio animi, veniam labore temporibus est fuga eaque sint suscipit ducimus magni nesciunt tempora amet. Velit animi natus autem. Laborum consequuntur illum obcaecati minus odit in? Quam odio velit eveniet sapiente, corporis architecto vel molestias ipsa! Numquam tempora dolore ipsum! Assumenda ex unde dolore aliquid soluta omnis?
 
-          <div className="topprodlist">
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-          </div>
-        </div>
+        </p>
         <Link className="viewmore" to="./products">
           <button type="button" className="btn btn-dark btn-lg btncss ">
-            View More <MdNavigateNext />
+            View All <MdNavigateNext />
           </button>
         </Link>
       </div>
       <div className="aboutus">
         <h1>Lextra Pharmaceuticals</h1>
-        <p>
-          Lextra Pharmaceuticals is professionally managed &amp; fast growing
+        <p className="homepara">
+          Lextra Pharmaceuticals is professionally managed, fast growing
           Indian pharmaceutical company focused in manufacturing and marketing
           of a wide range of healthcare products. The company's operations
           ranges from API to formulations, generics and healthcare products.
@@ -46,7 +50,7 @@ export const Home = () => {
         </Link>
       </div>
 
-      <div className="categories">
+      {/* <div className="categories">
         <div className="topprodhead">
           <h1>Categories</h1>
 
@@ -62,7 +66,7 @@ export const Home = () => {
             View All Categories <MdNavigateNext />
           </button>
         </Link>
-      </div>
+      </div> */}
 
       <div className="elitebrands">
         
@@ -70,31 +74,15 @@ export const Home = () => {
           {/* <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione repudiandae quod atque ab vero laborum necessitatibus impedit accusamus architecto deleniti ea, a enim blanditiis et ipsa cumque optio, aliquid fugit quos voluptate voluptatum perferendis? Esse voluptatibus pariatur enim ipsum quo. Natus expedita et nostrum est.
           </p> */}
         
-          <BrandCarousel />
+          {/* <BrandCarousel /> */}
+          <div class="brands">
+          <img src={brands} alt="Brands"/>
+          <img src={brands02} alt="Brands"/>
+
+          </div>
         
       </div>
-      <div className="footer">
-        <div className="footer-1">
-          <img src={logo} alt="Lextra" />
-          <p className="footerp">
-            Lextra Pharmaceuticals cater to over 45 therapeutic areas that
-            include cardiovascular, gastrointestinal, analgesics, haematinics,
-            anti-infectives, antibiotics, respiratory agents, antidiabetics and
-            immunologicals.
-          </p>
-        </div>
-        <div className="footer-2">
-        <h3>Lextra Pharmaceuticals</h3>
-        <p>Ekta Vihaar, Mohali, Punjab, India 140603</p>
-        <Link className="viewmore" to="./contact">
-          <button type="button" className="btn btn-warning btn-lg btncss vmbtn">
-            Contact Us
-          </button>
-        </Link>
-        <p>Copyright © Lextra Pharmaceuticals. All Rights Reserved.</p>
-        </div>
-        
-      </div>
+      <Vision/>
     </div>
   );
 };
